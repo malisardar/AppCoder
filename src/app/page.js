@@ -9,6 +9,10 @@ import { ServiceLogo } from "@/components/ServiceLogo";
 import { MoboWorld } from "@/components/MoboWorld";
 import { Services } from "@/components/Services";
 import SlideSection from "@/components/SlideSection";
+import { MobApp } from "@/components/MobApp";
+import { TechUse } from "@/components/TechUse";
+import { Pricing } from "@/components/Pricing";
+import { Faqs } from "@/components/Faqs";
 
 export default function Home() {
   return (
@@ -21,9 +25,13 @@ export default function Home() {
           <MoboWorld />
           <Services />
           <SlideSection />
+          <MobApp />
+          <TechUse />
+          <Pricing />
+          <Faqs />
         </Grid>
       </Grid>
-      <Footer />
+    
     </main>
   );
 }

@@ -108,7 +108,7 @@ export default function Header() {
             <Grid item xs={3}>
               <Grid container>
                 <Grid item xs={12}>
-                  <Image src={logo} height={60} style={{marginTop:"10px"}} />
+                  <Image src={logo} height={80} style={{marginTop:"10px"}} />
                 </Grid>
               </Grid>
             </Grid>
@@ -118,7 +118,7 @@ export default function Header() {
                   <Grid item xs={1.5} key={page}>
                     <Button
                       // onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white" }}
+                      sx={{ my: 3, color: "white" }}
                     >
                       {page}
                     </Button>

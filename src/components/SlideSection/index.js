@@ -12,6 +12,7 @@ import port3 from "../../assets/images/port3.png";
 
 import { Translate } from "@mui/icons-material";
 import { SlideBox } from "../SlideBox";
+import { OrangeBtn, PurpleBtn } from "../Buttons/ui";
 
 const SlideSection = () => {
   const settings = {
@@ -86,6 +87,22 @@ const SlideSection = () => {
           src={port3}
         />
       </Slider>
+
+      <Grid container>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+            marginTop: "5rem",
+          }}
+        >
+          <PurpleBtn sx={{ width: "15%", marginRight: "10px" }}>
+            Live Chat
+          </PurpleBtn>
+          <OrangeBtn sx={{ width: "15%" }}>Get a Quote</OrangeBtn>
+        </Box>
+      </Grid>
     </Box>
   );
 };

@@ -21,7 +21,6 @@ export const UIStyledMainHeading3 = styled(Typography)(({ theme }) => ({
   fontSize: "28px",
   color: "white",
   fontWeight: "bolder",
-  textAlign: "center",
   textTransform: "uppercase",
 }));
 
