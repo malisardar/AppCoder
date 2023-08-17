@@ -13,6 +13,8 @@ import { MobApp } from "@/components/MobApp";
 import { TechUse } from "@/components/TechUse";
 import { Pricing } from "@/components/Pricing";
 import { Faqs } from "@/components/Faqs";
+import { Foam } from "@/components/Foam";
+import { FooterCta } from "@/components/FooterCta";
 
 export default function Home() {
   return (
@@ -29,9 +31,9 @@ export default function Home() {
           <TechUse />
           <Pricing />
           <Faqs />
+          <FooterCta />
         </Grid>
       </Grid>
-    
     </main>
   );
 }

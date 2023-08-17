@@ -10,21 +10,25 @@ const FaqBox = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  height: "300px",
+  height: "290px",
   width: "100%",
 }));
 
 export const Faqs = () => {
   return (
-    <FaqBox>
-      <Container maxWidth={"xl"}>
-        <Grid container>
-          <Grid item xs={12} pt={10} mb={10}>
-            <UIStyledMainHeading2> FAQS </UIStyledMainHeading2>
-            <Faqtabs />
+    <Box sx={{ marginTop: "5rem", marginBottom: "5rem" }}>
+      <FaqBox>
+        <Container maxWidth={"xl"}>
+          <Grid container>
+            <Grid item xs={12} pt={10}>
+              <UIStyledMainHeading2> FAQS </UIStyledMainHeading2>
+            </Grid>
           </Grid>
-        </Grid>
+        </Container>
+      </FaqBox>
+      <Container>
+        <Faqtabs />
       </Container>
-    </FaqBox>
+    </Box>
   );
 };

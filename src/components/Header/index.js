@@ -112,7 +112,7 @@ export default function Header() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={8}>
+            {/* <Grid item xs={8}>
               <Grid container justifyContent="flex-end" spacing={2}>
                 {pages.map((page) => (
                   <Grid item xs={1.5} key={page}>
@@ -125,7 +125,7 @@ export default function Header() {
                   </Grid>
                 ))}
               </Grid>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Toolbar>
       </AppBar>

@@ -30,7 +30,7 @@ export const MainBanner = () => {
       >
         <Grid item xs={4}>
           <Stack spacing={5}>
-            <UIStyledMainHeading variant="h1" sx>
+            <UIStyledMainHeading variant="h1">
               Your Mobile Experience, Elevated
             </UIStyledMainHeading>
             <MainPara variant="P">
