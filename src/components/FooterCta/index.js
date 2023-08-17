@@ -27,14 +27,16 @@ export const FooterCta = () => {
             display: "flex",
             flexDirection: "column",
             justifyItems: "center",
-            paddingX: { xs: "3rem", md: "5rem", lg: "1rem" },
-            paddingX: { xs: "3rem", md: "5rem", lg: "1rem" },
+
           }}
         >
           <UIStyledMainHeading
             variant="h1"
             xs={4}
-            sx={{ fontSize: { xs: "40px", md: "54px" } }}
+            sx={{
+              fontSize: { xs: "40px", md: '30px', xl: "54px" },
+              px: { xs: 5, md: 10, lg: 20 }
+            }}
             data-aos="fade-right" data-aos-duration="2000"
           >
             Powerful applications that create new opportunities for your
@@ -46,6 +48,7 @@ export const FooterCta = () => {
               justifyContent: "center",
               alignItems: "center",
               marginTop: "5rem",
+              mx: { xs: 5, md: 10, lg: 20 }
             }}
             data-aos="fade-right" data-aos-duration="2000"
           >

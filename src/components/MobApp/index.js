@@ -30,10 +30,11 @@ export const MobApp = () => {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         justifyContent="space-evenly"
         alignItems="center"
+        py={{ xs: 6, lg: 0 }}
       >
-        <Grid item xs={12} md={4}>
-          <Stack spacing={5}>
-            <UIStyledMainHeading variant="h1" data-aos="fade-right" data-aos-duration="2000">
+        <Grid item xs={12} lg={4}>
+          <Stack spacing={5} px={{ xs: 10, lg: 0 }}>
+            <UIStyledMainHeading variant="h1" textAlign={{ xs: 'center', md: 'left' }} data-aos="fade-right" data-aos-duration="2000">
               Comprehensive Mobile App Development Services
             </UIStyledMainHeading>
             <MainPara variant="body1" data-aos="fade-right" data-aos-duration="2000">
@@ -63,11 +64,11 @@ export const MobApp = () => {
             </Box>
           </Stack>
         </Grid>
-        <Grid item xs={12} md={5} display="flex" alignItems="center" justifyContent={"center"}>
+        <Grid item xs={12} lg={5} display={{ xs: "none", lg: 'flex' }} alignItems="center" justifyContent={"center"}>
           <Image
             src={BannerMobo}
             height={"auto"}
-            style={{ objectFit: "cover", width: { xs: "100%", md: "50%" } }}
+            style={{ objectFit: "cover", width: { xs: "100%", md: "50%" }, }}
             data-aos="fade-left" data-aos-duration="2000"
           />
         </Grid>

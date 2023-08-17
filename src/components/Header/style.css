@@ -53,6 +53,7 @@ nav {
   /* width: 230px; */
   /* width: 100%; */
   transform: translate(-50%) !important;
+  z-index: 999;
 }
 
 .ul {

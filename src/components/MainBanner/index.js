@@ -52,12 +52,13 @@ export const MainBanner = () => {
         <Grid
           item
           xs={5}
+          md={4}
           display={{ xs: "none", md: "flex" }}
           alignItems="center"
         >
-          <Image data-aos="zoom-in"
+          <Image data-aos="fade-right"
             src={BannerMobo}
-            height={"auto"}
+            height={500}
             style={{ objectFit: "cover" }}
           />
         </Grid>

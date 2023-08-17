@@ -73,26 +73,30 @@ export const MoboWorld = () => {
             height: "70%",
           }}
         >
-          <SubPara variant="p" data-aos="fade-left" data-aos-duration="2000">
+          <SubPara variant="p" data-aos="fade-left" data-aos-duration="2000" px={{ xs: 8, lg: 0 }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
             accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, sed.
           </SubPara>
-          <ul data-aos="fade-left" data-aos-duration="2000">
-            <UiList>Experienced App Developers</UiList>
-            <UiList>Android & iOS Mobile App Development</UiList>
-            <UiList>App Solutions for Startups to Large Enterprises</UiList>
-            <UiList>Affordable App Solutions</UiList>
-          </ul>
-          <BlueBtn sx={{ width: { xs: "60%", md: "40%" } }} data-aos="fade-left" data-aos-duration="2000" >
-            Get Started
-          </BlueBtn>
+          <Box px={{ xs: 8, lg: 0 }}>
+            <ul data-aos="fade-left" data-aos-duration="2000">
+              <UiList>Experienced App Developers</UiList>
+              <UiList>Android & iOS Mobile App Development</UiList>
+              <UiList>App Solutions for Startups to Large Enterprises</UiList>
+              <UiList>Affordable App Solutions</UiList>
+            </ul>
+          </Box>
+          <Box px={{ xs: 8, lg: 0 }}>
+            <BlueBtn sx={{ width: { xs: "60%", md: "40%" }, }} data-aos="fade-left" data-aos-duration="2000" >
+              Get Started
+            </BlueBtn>
+          </Box>
         </Grid>
       </Grid>
 
       <TextBg />
-    </Box>
+    </Box >
   );
 };

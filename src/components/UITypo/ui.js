@@ -4,6 +4,15 @@ import { Box, Switch, TextField, Typography, Button } from "@mui/material";
 // Banner Heading
 
 export const UIStyledMainHeading = styled(Typography)(({ theme }) => ({
+  [theme.breakpoints.up('xs')]: {
+    fontSize: "34px",
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: "44px",
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: "64px",
+  },
   fontSize: "64px",
   color: "white",
   fontWeight: "bolder",

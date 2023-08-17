@@ -27,8 +27,11 @@ export default function Home() {
       easing: "ease-out-cubic",
       once: true,
       offset: 50,
+      disable: 'mobile'
     });
   }, []);
+
+
   return (
     <main className={styles.main}>
       <Grid container>

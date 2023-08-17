@@ -40,7 +40,7 @@ const MobileNavigation = () => {
         >
             <motion.div className="background" variants={sidebar} />
             <Navigation />
-            <Image src={logo} height={100} style={{marginLeft: '30px', marginTop: '20px'}} />
+            <Image src={logo} height={100} style={{ marginLeft: '30px', marginTop: '20px', }} />
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
     )
