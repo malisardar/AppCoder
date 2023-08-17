@@ -18,31 +18,31 @@ export const TechUse = () => {
       <UIStyledMainHeading2 textAlign="center">TECHNOLOGY</UIStyledMainHeading2>
       <UIStyledMainHeading2 textAlign="center" sx={{color:"#99bce1"}}>STACKS</UIStyledMainHeading2>
       <Grid container sx={{ justifyContent: "center",paddingTop:"5rem" }} alignItems={"center"}>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t1} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t2} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t3} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t4} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t5} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t6} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t7} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t8} />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={5} md={2}>
           <Image src={t9} />
         </Grid>
       </Grid>

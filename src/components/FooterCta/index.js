@@ -18,25 +18,30 @@ const FoamBg = styled(Box)(({ theme }) => ({
 export const FooterCta = () => {
   return (
     <Grid container justifyContent={"center"} alignItems={"center"}>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <FoamBg
           sx={{
             justifyContent: "center",
             alignContent: "center",
-            // padding: "10rem",
+
             display: "flex",
             flexDirection: "column",
             justifyItems: "center",
-            paddingX: { xs: "2rem", md: "5rem" },
+            paddingX: { xs: "3rem", md: "5rem", lg: "1rem" },
+            paddingX: { xs: "3rem", md: "5rem", lg: "1rem" },
           }}
         >
-          <UIStyledMainHeading variant="h1">
+          <UIStyledMainHeading
+            variant="h1"
+            xs={4}
+            sx={{ fontSize: { xs: "40px", md: "54px" } }}
+          >
             Powerful applications that create new opportunities for your
             business.
           </UIStyledMainHeading>
           <PurpleBtn
             sx={{
-              width: "50%",
+              width: "40%",
               justifyContent: "center",
               alignItems: "center",
               marginTop: "5rem",
@@ -46,7 +51,7 @@ export const FooterCta = () => {
           </PurpleBtn>
         </FoamBg>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6}>
         <Box>
           <Foam />
         </Box>

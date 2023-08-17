@@ -18,7 +18,7 @@ export const Foam = () => {
             alignContent: "center",
             flexDirection: "column",
             justifyItems: "center",
-            paddingX: { xs: "2rem", md: "5rem" },
+            paddingX: { xs: "3rem", md: "5rem" },
           }}
         >
           <TextField

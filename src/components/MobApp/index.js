@@ -16,7 +16,7 @@ const UIBox = styled(Box)(({ theme }) => ({
   backgroundPosition: "center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  height: "100vh",
+  height: { xs: "auto", md: "auto" },
   width: "100%",
 }));
 
@@ -25,13 +25,13 @@ export const MobApp = () => {
     <UIBox>
       <Grid
         container
-        sx={{ height: "100vh", marginTop: "4rem" }}
+        sx={{ height: "auto", marginTop: "4rem" }}
         rowSpacing={2}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         justifyContent="space-evenly"
         alignItems="center"
       >
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <Stack spacing={5}>
             <UIStyledMainHeading variant="h1" sx>
               Comprehensive Mobile App Development Services
@@ -41,21 +41,21 @@ export const MobApp = () => {
               eiusmod tempor incididunt ut labore.
             </MainPara>
             <Box sx={{ display: "flex" }}>
-              <Image src={android} style={{marginRight:"15px"}} />
+              <Image src={android} style={{ marginRight: "15px" }} />
               <MainPara variant="P">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore.
               </MainPara>
             </Box>
             <Box sx={{ display: "flex" }}>
-              <Image src={appstore} style={{marginRight:"15px"}} />
+              <Image src={appstore} style={{ marginRight: "15px" }} />
               <MainPara variant="P">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore.
               </MainPara>
             </Box>
             <Box sx={{ display: "flex" }}>
-              <Image src={webapp} style={{marginRight:"15px"}} />
+              <Image src={webapp} style={{ marginRight: "15px" }} />
               <MainPara variant="P">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore.
@@ -63,11 +63,11 @@ export const MobApp = () => {
             </Box>
           </Stack>
         </Grid>
-        <Grid item xs={5} display="flex" alignItems="center">
+        <Grid item xs={12} md={5} display="flex" alignItems="center" justifyContent={"center"}>
           <Image
             src={BannerMobo}
             height={"auto"}
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", width: { xs: "100%" , md: "50%" } }}
           />
         </Grid>
       </Grid>

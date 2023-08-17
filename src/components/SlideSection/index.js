@@ -97,10 +97,14 @@ const SlideSection = () => {
             marginTop: "5rem",
           }}
         >
-          <PurpleBtn sx={{ width: "15%", marginRight: "10px" }}>
+          <PurpleBtn
+            sx={{ width: { xs: "45%", md: "15%" }, marginRight: "10px" }}
+          >
             Live Chat
           </PurpleBtn>
-          <OrangeBtn sx={{ width: "15%" }}>Get a Quote</OrangeBtn>
+          <OrangeBtn sx={{ width: { xs: "45%", md: "15%" } }}>
+            Get a Quote
+          </OrangeBtn>
         </Box>
       </Grid>
     </Box>

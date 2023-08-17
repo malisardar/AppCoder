@@ -14,16 +14,30 @@ import { TextBg } from "../TextBg";
 
 export const MoboWorld = () => {
   return (
-    <Box sx={{background: "#f7f7f7" , paddingTop:"80px"}}>
-      <UIStyledMainHeading2>Seamless Solutions</UIStyledMainHeading2>
+    <Box
+      sx={{
+        background: "#f7f7f7",
+        paddingTop: "80px",
+      }}
+    >
+      <UIStyledMainHeading2 sx={{ fontSize: { xs: "30px", md: "64px" } }}>
+        Seamless Solutions
+      </UIStyledMainHeading2>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <UIStyledMainHeading2
           textAlign="center"
-          sx={{ fontWeight: 400, marginRight: "10px" }}
+          sx={{
+            fontWeight: 400,
+            marginRight: "10px",
+            fontSize: { xs: "30px", md: "64px" },
+          }}
         >
           FOR A
         </UIStyledMainHeading2>
-        <UIStyledMainHeading2 textAlign="center" sx={{ color: "#420f60" }}>
+        <UIStyledMainHeading2
+          textAlign="center"
+          sx={{ color: "#420f60", fontSize: { xs: "30px", md: "64px" } }}
+        >
           MOBILE WORLD
         </UIStyledMainHeading2>
       </Box>
@@ -36,12 +50,20 @@ export const MoboWorld = () => {
         justifyContent="space-evenly"
         alignItems="center"
       >
-        <Grid item xs={4}>
-          <Image src={moboo2} height={"auto"} style={{ objectFit: "cover" }} />
+        <Grid item xs={12} md={4} display={{ xs: "none", md: "block" }}>
+          <Image
+            src={moboo2}
+            style={{
+              objectFit: "cover",
+              width: "100% !important",
+              height: "100%",
+            }}
+          />
         </Grid>
         <Grid
           item
-          xs={5}
+          xs={12}
+          md={5}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -62,11 +84,13 @@ export const MoboWorld = () => {
             <UiList>App Solutions for Startups to Large Enterprises</UiList>
             <UiList>Affordable App Solutions</UiList>
           </ul>
-          <BlueBtn sx={{ width: "30%" }}>Get Started</BlueBtn>
+          <BlueBtn sx={{ width: { xs: "60%", md: "40%" } }}>
+            Get Started
+          </BlueBtn>
         </Grid>
       </Grid>
 
-      <TextBg/>
+      <TextBg />
     </Box>
   );
 };

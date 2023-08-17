@@ -9,8 +9,11 @@ export const Pricing = () => {
   return (
     <Container maxWidth="xl" sx={{ marginTop: "5rem" }}>
       <Grid container sx={{ justifyContent: "center" }}>
-        <Grid item xs={10}>
-          <UIStyledMainHeading2>
+        <Grid item xs={12} md={10}>
+          <UIStyledMainHeading2
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             Clients Simply Love Our Work
           </UIStyledMainHeading2>
           <SubPara textAlign={"center"} variant="body1">
@@ -27,13 +30,13 @@ export const Pricing = () => {
         justifyContent={"space-between"}
         sx={{ marginTop: "5rem" }}
       >
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <PricingBox mainbackground="#6000d6" subbackground="#eeebeb" />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <PricingBox mainbackground="#ff4646" subbackground="#eeebeb" />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <PricingBox mainbackground="#35ac62" subbackground="#eeebeb" />
         </Grid>
       </Grid>

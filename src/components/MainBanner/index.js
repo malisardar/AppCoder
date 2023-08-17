@@ -28,20 +28,31 @@ export const MainBanner = () => {
         justifyContent="space-evenly"
         alignItems="center"
       >
-        <Grid item xs={4}>
+        <Grid item xs={12} md={4}>
           <Stack spacing={5}>
-            <UIStyledMainHeading variant="h1">
+            <UIStyledMainHeading
+              variant="h1"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+             >
               Your Mobile Experience, Elevated
             </UIStyledMainHeading>
             <MainPara variant="P">
               We continuously invest in research and development to provide our
               clients with cutting-edge solutions and stay ahead of the curve.
             </MainPara>
-            <BlueBtn sx={{ width: "30%" }}>Get Started</BlueBtn>
+            <BlueBtn sx={{ width: { xs: "60%", md: "40%" } }}>
+              Get Started
+            </BlueBtn>
           </Stack>
         </Grid>
-        <Grid item xs={5} display="flex" alignItems="center">
-          <Image
+        <Grid
+          item
+          xs={5}
+          display={{ xs: "none", md: "flex" }}
+          alignItems="center"
+        >
+          <Image data-aos="zoom-in"
             src={BannerMobo}
             height={"auto"}
             style={{ objectFit: "cover" }}
