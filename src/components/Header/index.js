@@ -21,7 +21,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { Button, Grid } from "@mui/material";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.webp";
 import Image from "next/image";
 import "./style.css";
 import MobileNavigation from "./MobileNavigation";

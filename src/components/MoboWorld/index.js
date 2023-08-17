@@ -8,7 +8,7 @@ import {
 } from "../UITypo/ui";
 import { Box, Grid } from "@mui/material";
 import Image from "next/image";
-import moboo2 from "../../assets/images/moboo.png";
+import moboo2 from "../../assets/images/moboo.webp";
 import { BlueBtn } from "../Buttons/ui";
 import { TextBg } from "../TextBg";
 

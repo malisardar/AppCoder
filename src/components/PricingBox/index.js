@@ -2,8 +2,8 @@ import { Box, Grid } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 import { MainPara, SubPara, UIStyledMainHeading3 } from "../UITypo/ui";
-import stars from "../../assets/images/stars.png";
-import testi from "../../assets/images/testi.png";
+import stars from "../../assets/images/stars.webp";
+import testi from "../../assets/images/testi.webp";
 
 export const PricingBox = (props) => {
   return (

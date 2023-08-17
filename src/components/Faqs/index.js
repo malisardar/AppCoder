@@ -1,7 +1,7 @@
 import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/system";
-import faqbg from "../../assets/images/faq-bg.png";
+import faqbg from "../../assets/images/faq-bg.webp";
 import { UIStyledMainHeading, UIStyledMainHeading2 } from "../UITypo/ui";
 import Faqtabs from "../FaqTabs";
 

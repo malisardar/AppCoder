@@ -4,7 +4,7 @@ import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.webp'
 import Image from 'next/image';
 
 const sidebar = {

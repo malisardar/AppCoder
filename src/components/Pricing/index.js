@@ -2,7 +2,7 @@ import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 import { MainPara, SubPara, UIStyledMainHeading2 } from "../UITypo/ui";
 import Image from "next/image";
-import stars from "../../assets/images/stars.png";
+import stars from "../../assets/images/stars.webp";
 import { PricingBox } from "../PricingBox";
 
 export const Pricing = () => {

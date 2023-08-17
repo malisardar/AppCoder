@@ -13,6 +13,7 @@ nav {
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.793) !important;
+  z-index: 99;
 }
 
 .button {
@@ -29,6 +30,7 @@ nav {
   height: 50px;
   border-radius: 50%;
   background: transparent;
+  z-index: 999;
 }
 
 .ul,
@@ -60,6 +62,7 @@ nav {
   left: 50%;
   width: 230px;
   transform: translate(-50%);
+  z-index: 999;
 }
 
 .li {
@@ -110,7 +113,7 @@ nav {
     bottom: 0;
     width: 100%;
   } */
-  .button{
+  .button {
     right: 0px;
   }
 }
@@ -215,97 +218,97 @@ nav {
 }
 
 @media screen and (min-width: 400px) and (max-width: 450px) {
-  .button{
+  .button {
     right: 5px;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 550px) {
-  .button{
+  .button {
     right: 10px;
   }
 }
 @media screen and (min-width: 551px) and (max-width: 620px) {
-  .button{
+  .button {
     right: 15px;
   }
 }
 @media screen and (min-width: 621px) and (max-width: 670px) {
-  .button{
+  .button {
     right: 20px;
   }
 }
 @media screen and (min-width: 671px) and (max-width: 770px) {
-  .button{
+  .button {
     right: 25px;
   }
 }
 @media screen and (min-width: 771px) and (max-width: 850px) {
-  .button{
+  .button {
     right: 30px;
   }
 }
 @media screen and (min-width: 851px) and (max-width: 950px) {
-  .button{
+  .button {
     right: 35px;
   }
 }
 @media screen and (min-width: 951px) and (max-width: 1050px) {
-  .button{
+  .button {
     right: 45px;
   }
 }
 @media screen and (min-width: 1051px) and (max-width: 1150px) {
-  .button{
+  .button {
     right: 50px;
   }
 }
 @media screen and (min-width: 1151px) and (max-width: 1200px) {
-  .button{
+  .button {
     right: 55px;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 1250px) {
-  .button{
+  .button {
     right: 60px;
   }
 }
 @media screen and (min-width: 1251px) and (max-width: 1300px) {
-  .button{
+  .button {
     right: 65px;
   }
 }
 @media screen and (min-width: 1301px) and (max-width: 1350px) {
-  .button{
+  .button {
     right: 70px;
   }
 }
 @media screen and (min-width: 1351px) and (max-width: 1450px) {
-  .button{
+  .button {
     right: 73px;
   }
 }
 @media screen and (min-width: 1451px) and (max-width: 1550px) {
-  .button{
+  .button {
     right: 80px;
   }
 }
 @media screen and (min-width: 1551px) and (max-width: 1650px) {
-  .button{
+  .button {
     right: 85px;
   }
 }
 @media screen and (min-width: 1651px) and (max-width: 1750px) {
-  .button{
+  .button {
     right: 92px;
   }
 }
 @media screen and (min-width: 1751px) and (max-width: 1850px) {
-  .button{
+  .button {
     right: 98px;
   }
 }
 @media screen and (min-width: 1851px) {
-  .button{
-    right: 105px;
+  .button {
+    right: 106px;
   }
 }

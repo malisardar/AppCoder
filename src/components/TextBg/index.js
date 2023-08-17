@@ -1,7 +1,7 @@
 import { Box, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import MOBILEAPPUIUX from "../../assets/images/MOBILEAPPUIUX.png";
+import MOBILEAPPUIUX from "../../assets/images/MOBILEAPPUIUX.webp";
 
 export const TextBg = () => {
   return (

@@ -6,9 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Box, Container, Grid } from "@mui/material";
 import Image from "next/image";
-import port1 from "../../assets/images/port1.png";
-import port2 from "../../assets/images/port2.png";
-import port3 from "../../assets/images/port3.png";
+import port1 from "../../assets/images/port1.webp";
+import port2 from "../../assets/images/port2.webp";
+import port3 from "../../assets/images/port3.webp";
 
 import { Translate } from "@mui/icons-material";
 import { SlideBox } from "../SlideBox";

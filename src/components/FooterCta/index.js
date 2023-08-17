@@ -1,7 +1,7 @@
 import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 import { Foam } from "../Foam";
-import foambg from "../../assets/images/foam-bg.png";
+import foambg from "../../assets/images/foam-bg.webp";
 import styled from "styled-components";
 import { UIStyledMainHeading } from "../UITypo/ui";
 import { PurpleBtn } from "../Buttons/ui";

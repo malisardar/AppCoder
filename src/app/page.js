@@ -33,6 +33,11 @@ export default function Home() {
     <main className={styles.main}>
       <Grid container>
         <Grid item xs={12}>
+          <Header />
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12}>
           <MainBanner />
           <ServiceLogo />
           <MoboWorld />

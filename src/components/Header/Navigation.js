@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.webp'
 import Image from "next/image";
 
 const variants = {

@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceImg from "../../assets/images/service-logo.png";
+import ServiceImg from "../../assets/images/service-logo.webp";
 import { Grid } from "@mui/material";
 import Image from "next/image";
 

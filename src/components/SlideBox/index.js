@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import port1 from "../../assets/images/port1.png";
+import port1 from "../../assets/images/port1.webp";
 import { UIStyledMainHeading3 } from "../UITypo/ui";
 
 export const SlideBox = (props) => {
