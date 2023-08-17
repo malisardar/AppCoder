@@ -12,3 +12,13 @@ body {
 .mohsin>.slick-list {
     padding: 10rem 0rem 0rem 0rem;
 }
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #e5007d !important;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 13px !important;
+}

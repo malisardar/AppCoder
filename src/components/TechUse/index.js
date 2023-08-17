@@ -13,38 +13,23 @@ import { Container, Grid } from "@mui/material";
 import { UIStyledMainHeading2 } from "../UITypo/ui";
 
 export const TechUse = () => {
+
+  const images = [t1, t2, t3, t4, t5, t6, t7, t8, t9]
+
   return (
-    <Container maxWidth="xl" sx={{paddingTop:"5rem"}}>
-      <UIStyledMainHeading2 textAlign="center">TECHNOLOGY</UIStyledMainHeading2>
-      <UIStyledMainHeading2 textAlign="center" sx={{color:"#99bce1"}}>STACKS</UIStyledMainHeading2>
-      <Grid container sx={{ justifyContent: "center",paddingTop:"5rem" }} alignItems={"center"}>
-        <Grid item xs={2}>
-          <Image src={t1} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t2} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t3} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t4} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t5} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t6} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t7} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t8} />
-        </Grid>
-        <Grid item xs={2}>
-          <Image src={t9} />
-        </Grid>
+    <Container maxWidth="xl" sx={{ paddingTop: "5rem" }}>
+      <UIStyledMainHeading2 textAlign="center" data-aos="fade-down" data-aos-duration="2000">TECHNOLOGY</UIStyledMainHeading2>
+      <UIStyledMainHeading2 textAlign="center" sx={{ color: "#99bce1" }} data-aos="fade-up" data-aos-duration="2000">STACKS</UIStyledMainHeading2>
+      <Grid container sx={{ justifyContent: "center", paddingTop: "5rem" }} alignItems={"center"}>
+        {
+          images.map((item) => {
+            return (
+              <Grid item xs={5} md={2}>
+                <Image src={item} data-aos="zoom-in" data-aos-duration="1000" />
+              </Grid>
+            )
+          })
+        }
       </Grid>
     </Container>
   );

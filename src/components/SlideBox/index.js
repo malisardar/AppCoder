@@ -10,14 +10,12 @@ export const SlideBox = (props) => {
       sx={{
         background: props.background,
         height: "410px",
-       
         borderRadius: "50px",
         position: "relative",
         justifyContent: "center",
         alignContent: "center",
         textAlign: "center",
         marginX: "5rem",
-     
       }}
     >
       <Image
@@ -40,6 +38,7 @@ export const SlideBox = (props) => {
           left: "50%",
           transform: "translate(-50%)",
           paddingBottom: "1rem",
+          fontSize: { xs: "20px", md: "28px" },
         }}
       >
         {props.heading}
