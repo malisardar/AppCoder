@@ -33,7 +33,7 @@ export const BlackBtn = styled(Button)(({ theme }) => ({
   textAlign: "center",
   height: "70px",
   borderRadius: "50px",
-  backgroundColor: "#20b7f8",
+  backgroundColor: "black",
   textTransform: "capitalize",
   "&:hover": {
     backgroundColor: "black",

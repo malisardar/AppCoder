@@ -32,7 +32,7 @@ export const MainPara = styled(Typography)(({ theme }) => ({
 }));
 
 export const SubPara = styled(Typography)(({ theme }) => ({
-  fontSize: "22px",
+  fontSize: "20px",
   color: "black",
 }));
 
