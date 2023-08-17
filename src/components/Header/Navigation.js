@@ -1,6 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
+import logo from '../../assets/images/logo.png'
+import Image from "next/image";
 
 const variants = {
     open: {
@@ -10,13 +12,36 @@ const variants = {
         transition: { staggerChildren: 0.05, staggerDirection: -1 }
     }
 };
+const variants2 = {
+    open: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            y: { stiffness: 1000, velocity: -100 }
+        }
+    },
+    closed: {
+        y: 50,
+        opacity: 0,
+        transition: {
+            y: { stiffness: 1000 }
+        }
+    }
+};
+
+const pages = [{ name: "Home" }, { name: "About Us" }, { name: "Services" }, { name: "Blogs" }, { name: "Contact Us" }];
 
 export const Navigation = () => (
-    <motion.ul variants={variants} className="ul" >
-        {itemIds.map(i => (
-            <MenuItem i={i} key={i} />
-        ))}
-    </motion.ul>
+    <>
+        <motion.div className="imgDiv" variants={variants2}>
+            <Image src={logo} height={150} />
+        </motion.div>
+        <motion.ul variants={variants} className="ul" >
+
+            {pages.map((item, i) => (
+                <MenuItem item={item} key={i} i={i} />
+            ))}
+        </motion.ul>
+    </>
 );
 
-const itemIds = [0, 1, 2, 3, 4];

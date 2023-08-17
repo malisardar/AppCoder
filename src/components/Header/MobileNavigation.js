@@ -4,10 +4,12 @@ import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
+import logo from '../../assets/images/logo.png'
+import Image from 'next/image';
 
 const sidebar = {
     open: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px at 354px 40px)`,
+        clipPath: `circle(${height * 2 + 200}px at 93% 40px)`,
         transition: {
             type: "spring",
             stiffness: 20,
@@ -15,7 +17,7 @@ const sidebar = {
         }
     }),
     closed: {
-        clipPath: "circle(30px at 354px 40px)",
+        clipPath: "circle(30px at 93% 40px)",
         transition: {
             delay: 0.5,
             type: "spring",
@@ -38,6 +40,7 @@ const MobileNavigation = () => {
         >
             <motion.div className="background" variants={sidebar} />
             <Navigation />
+            <Image src={logo} height={100} style={{marginLeft: '30px', marginTop: '20px'}} />
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
     )

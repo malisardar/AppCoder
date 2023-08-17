@@ -89,7 +89,7 @@ export default function Header() {
 
   return (
     <>
-      <Box sx={{ display: { md: "flex", xs: 'none' } }}>
+      {/* <Box sx={{ display: { md: "flex", xs: 'none' } }}>
         <CssBaseline />
         <AppBar position="fixed" open={open}>
           <Toolbar sx={{ display: "flex", background: "black" }}>
@@ -181,8 +181,9 @@ export default function Header() {
             ))}
           </List>
         </Drawer>
-      </Box>
-      <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+      </Box> */}
+      <Box >
+
         <MobileNavigation />
       </Box>
     </>
