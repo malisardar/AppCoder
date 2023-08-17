@@ -23,6 +23,8 @@ import MenuItem from "@mui/material/MenuItem";
 import { Button, Grid } from "@mui/material";
 import logo from "../../assets/images/logo.png";
 import Image from "next/image";
+import "./style.css";
+import MobileNavigation from "./MobileNavigation";
 
 const drawerWidth = 240;
 
@@ -71,7 +73,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
-const pages = ["Home", "About Us", "Services" , "Blogs" , "Contact Us" ];
+const pages = ["Home", "About Us", "Services", "Blogs", "Contact Us"];
 
 export default function Header() {
   const theme = useTheme();
@@ -86,98 +88,103 @@ export default function Header() {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar sx={{ display: "flex" , background: "black"}}>
-          <Grid container>
-            <Grid item xs={1} sx={{ display: { xs: "block", md: "none" } }}>
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                onClick={handleDrawerOpen}
-                edge="start"
-                sx={{
-                  mr: 2,
-                  ...(open && { display: "none" }),
-                }}
-              >
-                <MenuIcon />
-              </IconButton>
-            </Grid>
-            <Grid item xs={3}>
-              <Grid container>
-                <Grid item xs={12}>
-                  <Image src={logo} height={80} style={{marginTop:"10px"}} />
+    <>
+      <Box sx={{ display: { md: "flex", xs: 'none' } }}>
+        <CssBaseline />
+        <AppBar position="fixed" open={open}>
+          <Toolbar sx={{ display: "flex", background: "black" }}>
+            <Grid container>
+              <Grid item xs={1} sx={{ display: { xs: "block", md: "none" } }}>
+                <IconButton
+                  color="inherit"
+                  aria-label="open drawer"
+                  onClick={handleDrawerOpen}
+                  edge="start"
+                  sx={{
+                    mr: 2,
+                    ...(open && { display: "none" }),
+                  }}
+                >
+                  <MenuIcon />
+                </IconButton>
+              </Grid>
+              <Grid item xs={3}>
+                <Grid container>
+                  <Grid item xs={12}>
+                    <Image src={logo} height={80} style={{ marginTop: "10px" }} />
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item xs={8}>
+                <Grid container justifyContent="flex-end" spacing={2}>
+                  {pages.map((page) => (
+                    <Grid item xs={1.5} key={page}>
+                      <Button
+                        // onClick={handleCloseNavMenu}
+                        sx={{ my: 3, color: "white" }}
+                      >
+                        {page}
+                      </Button>
+                    </Grid>
+                  ))}
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={8}>
-              <Grid container justifyContent="flex-end" spacing={2}>
-                {pages.map((page) => (
-                  <Grid item xs={1.5} key={page}>
-                    <Button
-                      // onClick={handleCloseNavMenu}
-                      sx={{ my: 3, color: "white" }}
-                    >
-                      {page}
-                    </Button>
-                  </Grid>
-                ))}
-              </Grid>
-            </Grid>
-          </Grid>
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          "& .MuiDrawer-paper": {
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          sx={{
             width: drawerWidth,
-            boxSizing: "border-box",
-          },
-        }}
-        variant="persistent"
-        anchor="left"
-        open={open}
-      >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
-    </Box>
+            flexShrink: 0,
+            "& .MuiDrawer-paper": {
+              width: drawerWidth,
+              boxSizing: "border-box",
+            },
+          }}
+          variant="persistent"
+          anchor="left"
+          open={open}
+        >
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === "ltr" ? (
+                <ChevronLeftIcon />
+              ) : (
+                <ChevronRightIcon />
+              )}
+            </IconButton>
+          </DrawerHeader>
+          <Divider />
+          <List>
+            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+          <Divider />
+          <List>
+            {["All mail", "Trash", "Spam"].map((text, index) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  </ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </Drawer>
+      </Box>
+      <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+        <MobileNavigation />
+      </Box>
+    </>
   );
 }
