@@ -11,12 +11,12 @@ export const Pricing = () => {
       <Grid container sx={{ justifyContent: "center" }}>
         <Grid item xs={12} md={10}>
           <UIStyledMainHeading2
-            data-aos="fade-up"
+            data-aos="fade-down"
             data-aos-anchor-placement="top-bottom"
           >
             Clients Simply Love Our Work
           </UIStyledMainHeading2>
-          <SubPara textAlign={"center"} variant="body1">
+          <SubPara textAlign={"center"} variant="body1" data-aos="fade-up" data-aos-duration="2000">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
@@ -30,13 +30,13 @@ export const Pricing = () => {
         justifyContent={"space-between"}
         sx={{ marginTop: "5rem" }}
       >
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} data-aos="fade-right" data-aos-duration="2000">
           <PricingBox mainbackground="#6000d6" subbackground="#eeebeb" />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} data-aos="zoom-in" data-aos-duration="2000">
           <PricingBox mainbackground="#ff4646" subbackground="#eeebeb" />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={4} data-aos="fade-left" data-aos-duration="2000">
           <PricingBox mainbackground="#35ac62" subbackground="#eeebeb" />
         </Grid>
       </Grid>

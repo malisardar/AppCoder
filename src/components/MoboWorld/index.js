@@ -19,11 +19,12 @@ export const MoboWorld = () => {
         background: "#f7f7f7",
         paddingTop: "80px",
       }}
+
     >
-      <UIStyledMainHeading2 sx={{ fontSize: { xs: "30px", md: "64px" } }}>
+      <UIStyledMainHeading2 sx={{ fontSize: { xs: "30px", md: "64px" } }} data-aos="fade-up" data-aos-duration="1000">
         Seamless Solutions
       </UIStyledMainHeading2>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center" }} data-aos="fade-up" data-aos-duration="1000">
         <UIStyledMainHeading2
           textAlign="center"
           sx={{
@@ -58,6 +59,7 @@ export const MoboWorld = () => {
               width: "100% !important",
               height: "100%",
             }}
+            data-aos="fade-right" data-aos-duration="2000"
           />
         </Grid>
         <Grid
@@ -71,20 +73,20 @@ export const MoboWorld = () => {
             height: "70%",
           }}
         >
-          <SubPara variant="p">
+          <SubPara variant="p" data-aos="fade-left" data-aos-duration="2000">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
             accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, sed.
           </SubPara>
-          <ul>
+          <ul data-aos="fade-left" data-aos-duration="2000">
             <UiList>Experienced App Developers</UiList>
             <UiList>Android & iOS Mobile App Development</UiList>
             <UiList>App Solutions for Startups to Large Enterprises</UiList>
             <UiList>Affordable App Solutions</UiList>
           </ul>
-          <BlueBtn sx={{ width: { xs: "60%", md: "40%" } }}>
+          <BlueBtn sx={{ width: { xs: "60%", md: "40%" } }} data-aos="fade-left" data-aos-duration="2000" >
             Get Started
           </BlueBtn>
         </Grid>

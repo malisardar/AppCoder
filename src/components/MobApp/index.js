@@ -33,28 +33,28 @@ export const MobApp = () => {
       >
         <Grid item xs={12} md={4}>
           <Stack spacing={5}>
-            <UIStyledMainHeading variant="h1" sx>
+            <UIStyledMainHeading variant="h1" data-aos="fade-right" data-aos-duration="2000">
               Comprehensive Mobile App Development Services
             </UIStyledMainHeading>
-            <MainPara variant="P">
+            <MainPara variant="body1" data-aos="fade-right" data-aos-duration="2000">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </MainPara>
-            <Box sx={{ display: "flex" }}>
+            <Box sx={{ display: "flex" }} data-aos="fade-right" data-aos-duration="2000">
               <Image src={android} style={{ marginRight: "15px" }} />
               <MainPara variant="P">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore.
               </MainPara>
             </Box>
-            <Box sx={{ display: "flex" }}>
+            <Box sx={{ display: "flex" }} data-aos="fade-right" data-aos-duration="2000">
               <Image src={appstore} style={{ marginRight: "15px" }} />
               <MainPara variant="P">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore.
               </MainPara>
             </Box>
-            <Box sx={{ display: "flex" }}>
+            <Box sx={{ display: "flex" }} data-aos="fade-right" data-aos-duration="2000">
               <Image src={webapp} style={{ marginRight: "15px" }} />
               <MainPara variant="P">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -67,7 +67,8 @@ export const MobApp = () => {
           <Image
             src={BannerMobo}
             height={"auto"}
-            style={{ objectFit: "cover", width: { xs: "100%" , md: "50%" } }}
+            style={{ objectFit: "cover", width: { xs: "100%", md: "50%" } }}
+            data-aos="fade-left" data-aos-duration="2000"
           />
         </Grid>
       </Grid>

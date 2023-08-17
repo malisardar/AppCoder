@@ -14,36 +14,36 @@ import { UIStyledMainHeading2 } from "../UITypo/ui";
 
 export const TechUse = () => {
   return (
-    <Container maxWidth="xl" sx={{paddingTop:"5rem"}}>
-      <UIStyledMainHeading2 textAlign="center">TECHNOLOGY</UIStyledMainHeading2>
-      <UIStyledMainHeading2 textAlign="center" sx={{color:"#99bce1"}}>STACKS</UIStyledMainHeading2>
-      <Grid container sx={{ justifyContent: "center",paddingTop:"5rem" }} alignItems={"center"}>
+    <Container maxWidth="xl" sx={{ paddingTop: "5rem" }}>
+      <UIStyledMainHeading2 textAlign="center" data-aos="fade-down" data-aos-duration="2000">TECHNOLOGY</UIStyledMainHeading2>
+      <UIStyledMainHeading2 textAlign="center" sx={{ color: "#99bce1" }} data-aos="fade-up" data-aos-duration="2000">STACKS</UIStyledMainHeading2>
+      <Grid container sx={{ justifyContent: "center", paddingTop: "5rem" }} alignItems={"center"}>
         <Grid item xs={5} md={2}>
-          <Image src={t1} />
+          <Image src={t1} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t2} />
+          <Image src={t2} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t3} />
+          <Image src={t3} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t4} />
+          <Image src={t4} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t5} />
+          <Image src={t5} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t6} />
+          <Image src={t6} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t7} />
+          <Image src={t7} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t8} />
+          <Image src={t8} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
         <Grid item xs={5} md={2}>
-          <Image src={t9} />
+          <Image src={t9} data-aos="zoom-in" data-aos-duration="1000" />
         </Grid>
       </Grid>
     </Container>

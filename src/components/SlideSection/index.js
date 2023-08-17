@@ -57,6 +57,7 @@ const SlideSection = () => {
         textAlign: "center",
         overflow: "hidden",
       }}
+      data-aos="zoom-in" data-aos-duration="2000"
     >
       <Slider {...settings} className="mohsin">
         <SlideBox

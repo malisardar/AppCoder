@@ -35,6 +35,7 @@ export const FooterCta = () => {
             variant="h1"
             xs={4}
             sx={{ fontSize: { xs: "40px", md: "54px" } }}
+            data-aos="fade-right" data-aos-duration="2000"
           >
             Powerful applications that create new opportunities for your
             business.
@@ -46,13 +47,14 @@ export const FooterCta = () => {
               alignItems: "center",
               marginTop: "5rem",
             }}
+            data-aos="fade-right" data-aos-duration="2000"
           >
             Get a Quote
           </PurpleBtn>
         </FoamBg>
       </Grid>
       <Grid item xs={12} md={6}>
-        <Box>
+        <Box >
           <Foam />
         </Box>
       </Grid>

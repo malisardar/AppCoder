@@ -33,15 +33,18 @@ export const MainBanner = () => {
             <UIStyledMainHeading
               variant="h1"
               data-aos="fade-up"
-              data-aos-duration="3000"
-             >
+              data-aos-duration="2000"
+            >
               Your Mobile Experience, Elevated
             </UIStyledMainHeading>
-            <MainPara variant="P">
+            <MainPara variant="body1" data-aos="fade-up"
+              data-aos-duration="2000">
               We continuously invest in research and development to provide our
               clients with cutting-edge solutions and stay ahead of the curve.
             </MainPara>
-            <BlueBtn sx={{ width: { xs: "60%", md: "40%" } }}>
+            <BlueBtn data-aos="fade-up"
+              data-aos-duration="2000"
+              sx={{ width: { xs: "60%", md: "40%" } }}>
               Get Started
             </BlueBtn>
           </Stack>

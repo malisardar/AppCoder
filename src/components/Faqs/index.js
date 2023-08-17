@@ -21,7 +21,7 @@ export const Faqs = () => {
         <Container maxWidth={"xl"}>
           <Grid container>
             <Grid item xs={12} pt={10}>
-              <UIStyledMainHeading2> FAQS </UIStyledMainHeading2>
+              <UIStyledMainHeading2 data-aos="zoom-in" data-aos-duration="2000"> FAQS </UIStyledMainHeading2>
             </Grid>
           </Grid>
         </Container>

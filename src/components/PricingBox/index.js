@@ -17,6 +17,7 @@ export const PricingBox = (props) => {
           display: "flex",
           alignItems: "center"
         }}
+        
       >
         <Grid container justifyContent='center'>
           <Grid item xs={2} mt={1}>
