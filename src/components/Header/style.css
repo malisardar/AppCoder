@@ -1,0 +1,311 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.793) !important;
+}
+
+.button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.ul,
+.li {
+  margin: 0;
+  padding: 0;
+}
+
+/* .imgDiv{
+  position: absolute;
+  left: 50%;
+  padding: 25px;
+  width: 230px;
+  transform: translate(-50%);
+} */
+.imgDiv img {
+  position: absolute;
+  left: 50%;
+  padding: 25px;
+  /* width: 230px; */
+  /* width: 100%; */
+  transform: translate(-50%) !important;
+}
+
+.ul {
+  padding: 25px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 230px;
+  transform: translate(-50%);
+}
+
+.li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  flex: 1;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 350px) {
+  /* .background {
+    clip-path: circle(30px at 89% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+  .button{
+    right: 0px;
+  }
+}
+@media screen and (min-width: 351px) and (max-width: 450px) {
+  /* .background {
+    clip-path: circle(30px at 92% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+@media screen and (min-width: 451px) and (max-width: 550px) {
+  /* .background {
+    clip-path: circle(30px at 93% 40px) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+@media screen and (min-width: 551px) and (max-width: 650px) {
+  /* .background {
+    clip-path: circle(30px at 94% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+@media screen and (min-width: 651px) and (max-width: 799px) {
+  /* .background {
+    clip-path: circle(30px at 95% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  /* .background {
+    clip-path: circle(30px at 96.5% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+  /* .background {
+    clip-path: circle(30px at 97% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  /* .background {
+    clip-path: circle(30px at 97.5% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+@media screen and (min-width: 1501px) and (max-width: 1700px) {
+  /* .background {
+    clip-path: circle(30px at 98% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+@media screen and (min-width: 1701px) {
+  /* .background {
+    clip-path: circle(30px at 98.2% 40px) !important;
+    background: rgba(0, 0, 0, 0.793) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  } */
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .button{
+    right: 5px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  .button{
+    right: 10px;
+  }
+}
+@media screen and (min-width: 551px) and (max-width: 620px) {
+  .button{
+    right: 15px;
+  }
+}
+@media screen and (min-width: 621px) and (max-width: 670px) {
+  .button{
+    right: 20px;
+  }
+}
+@media screen and (min-width: 671px) and (max-width: 770px) {
+  .button{
+    right: 25px;
+  }
+}
+@media screen and (min-width: 771px) and (max-width: 850px) {
+  .button{
+    right: 30px;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 950px) {
+  .button{
+    right: 35px;
+  }
+}
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+  .button{
+    right: 45px;
+  }
+}
+@media screen and (min-width: 1051px) and (max-width: 1150px) {
+  .button{
+    right: 50px;
+  }
+}
+@media screen and (min-width: 1151px) and (max-width: 1200px) {
+  .button{
+    right: 55px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1250px) {
+  .button{
+    right: 60px;
+  }
+}
+@media screen and (min-width: 1251px) and (max-width: 1300px) {
+  .button{
+    right: 65px;
+  }
+}
+@media screen and (min-width: 1301px) and (max-width: 1350px) {
+  .button{
+    right: 70px;
+  }
+}
+@media screen and (min-width: 1351px) and (max-width: 1450px) {
+  .button{
+    right: 73px;
+  }
+}
+@media screen and (min-width: 1451px) and (max-width: 1550px) {
+  .button{
+    right: 80px;
+  }
+}
+@media screen and (min-width: 1551px) and (max-width: 1650px) {
+  .button{
+    right: 85px;
+  }
+}
+@media screen and (min-width: 1651px) and (max-width: 1750px) {
+  .button{
+    right: 92px;
+  }
+}
+@media screen and (min-width: 1751px) and (max-width: 1850px) {
+  .button{
+    right: 98px;
+  }
+}
+@media screen and (min-width: 1851px) {
+  .button{
+    right: 105px;
+  }
+}
