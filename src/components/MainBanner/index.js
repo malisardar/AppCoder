@@ -27,6 +27,7 @@ export const MainBanner = () => {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         justifyContent="space-evenly"
         alignItems="center"
+        px={{ xs: 10, lg: 0 }}
       >
         <Grid item xs={12} md={4}>
           <Stack spacing={5}>

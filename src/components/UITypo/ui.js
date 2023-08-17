@@ -8,7 +8,7 @@ export const UIStyledMainHeading = styled(Typography)(({ theme }) => ({
     fontSize: "34px",
   },
   [theme.breakpoints.up('md')]: {
-    fontSize: "44px",
+    fontSize: "40px",
   },
   [theme.breakpoints.up('lg')]: {
     fontSize: "64px",
